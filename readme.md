@@ -4,6 +4,6 @@ Team:
 
 José Ruan
 Amanda Aguiar
-Darley Costa
+Danrlei Andrade
 Onélia Andrade
 Jeferson Silva
