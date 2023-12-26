@@ -7,7 +7,7 @@ export default class DocumentoController {
 
     async findAll(req: Request, res: Response) {
         try {
-            const filmes = await documentoRepository.retrieveAll();
+            const documentos = await documentoRepository.retrieveAll();
             res.status(200).send(filmes);
         } catch (err) {
             res.status(500).send({
@@ -19,7 +19,7 @@ export default class DocumentoController {
     async findOne(req: Request, res: Response) {
         const id: number = parseInt(req.params.id);
         try {
-            const filme = await documentoRepository.retrieveById(id);
+            const documento = await documentoRepository.retrieveById(id);
             if (filme) res.status(200).send(filme);
             else
                 res.status(404).send({
