@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-const upload = multer({ dest: './uploads/' });
+const upload = multer({ dest: 'uploads/' });
 
 app.post('/api/upload', upload.single('image'), async (req, res) => {
  try {
