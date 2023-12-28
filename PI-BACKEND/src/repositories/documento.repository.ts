@@ -1,4 +1,8 @@
 import { Documento } from "../models/documento.model";
+import bodyParser from "body-parser";
+import multer from "multer";
+import cors from "cors";
+
 
 class DocumentoRepository {
     documentoDB = new Array<Documento>();
@@ -30,6 +34,8 @@ class DocumentoRepository {
             throw new Error("Falha ao buscar o documento!");
         }
     }
+
+    
 }
 
 export default new DocumentoRepository();
