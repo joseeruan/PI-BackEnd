@@ -8,7 +8,7 @@ export default class DocumentoController {
     async findAll(req: Request, res: Response) {
         try {
             const documentos = await documentoRepository.retrieveAll();
-            res.status(200).send(filmes);
+            res.status(200).send(documentos);
         } catch (err) {
             res.status(500).send({
                 message: "Erro encontrado quando estava se fazendo a busca por todos os documentos."
@@ -20,7 +20,7 @@ export default class DocumentoController {
         const id: number = parseInt(req.params.id);
         try {
             const documento = await documentoRepository.retrieveById(id);
-            if (filme) res.status(200).send(filme);
+            if (documento) res.status(200).send(documento);
             else
                 res.status(404).send({
                     message: `Não foi encontrado nenhum documento com esse id=${id}.`
