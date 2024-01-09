@@ -1,9 +1,8 @@
 import { Application } from "express";
-import documentoRoutes from "./documento.routes";
-
+import documentRoutes from "./document.routes";
 
 export default class Routes {
-    constructor(app: Application) {
-        app.use("/di2win", documentoRoutes);
-    }
+  constructor(app: Application) {
+    app.use("/di2win", documentRoutes);
+  }
 }
