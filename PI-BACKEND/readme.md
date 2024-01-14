@@ -4,22 +4,38 @@ Este documento contém informações importantes para os desenvolvedores que des
 
 ## Visão Geral
 
-O backend deste projeto fornece uma API RESTful para acessar recursos específicos. Abaixo estão os principais endpoints disponíveis:
+O backend deste projeto fornece uma API RESTful para acessar recursos específicos.:
 
-### Fazer uma Requisição via POST
+
+## Instruções de Execução do Projeto
+
+Para executar o projeto localmente, siga as instruções abaixo:
+
+1. Clone o repositório para sua máquina local.
+2. Instale as dependências do projeto usando o seguinte comando:
+
+   ```bash
+   npm update 
+   ```
+Inicie o servidor usando o comando:
+```bash
+npm run dev
+```
+
+### EndPoint da Requisição via POST
 
 - **http://localhost:8080/di2win/extraidados**
-
 ## Testando a API com Postman
 
 Para testar a API usando o Postman, você pode baixar a coleção do Postman e importá-la no seu Postman local.
 
 ### Como Importar a Coleção no Postman:
 
-1. Baixe a [coleção do Postman](./postman\Di2win.postman_collection.json).
+1. Baixe a [coleção do Postman](./postman/Di2win.postman_collection.json).
 2. Abra o Postman.
 3. No canto superior esquerdo, clique em "Import".
 4. Selecione "Upload Files" e escolha o arquivo baixado.
+
 
 ## Exemplo de Requisição com Axios
 
@@ -40,7 +56,9 @@ axios.post('http://localhost:8080/di2win/extraidados', data {
   // Lidar com erros de requisição
   console.error('Erro na requisição:', error);
 });
+```
 
+## Formato das Respostas da API
 
-
+A API retorna dados em formato JSON. Exemplos de dados de resposta estão incluídos na seção de descrição dos endpoints acima.
 
