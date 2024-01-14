@@ -16,7 +16,7 @@ Para testar a API usando o Postman, você pode baixar a coleção do Postman e i
 
 ### Como Importar a Coleção no Postman:
 
-1. Baixe a [coleção do Postman](./\postman\Di2win.postman_collection.json).
+1. Baixe a [coleção do Postman](./postman\Di2win.postman_collection.json).
 2. Abra o Postman.
 3. No canto superior esquerdo, clique em "Import".
 4. Selecione "Upload Files" e escolha o arquivo baixado.
